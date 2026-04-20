@@ -5,7 +5,9 @@ const testNumSpans = document.querySelectorAll(".num-of-questions");
 async function questionsNum() {
   for (let i = 0; i < testCards.length; i++) {
     // testCards[0].classList[1] = html (the second class name in the card element)
-    let result = await fetch(`../${testCards[i].classList[1]}_questions.json`);
+    let result = await fetch(
+      `questions/${testCards[i].classList[1]}_questions.json`,
+    );
     let data = await result.json();
 
     // assign number of questions in the json file to the span
