@@ -1,0 +1,77 @@
+[
+  {
+    "question": "What kind of CSS framework is Tailwind primarily known as?",
+    "choices": [
+      "Component-based",
+      "Utility-first",
+      "Object-Oriented CSS (OOCSS)",
+      "Block Element Modifier (BEM)"
+    ],
+    "answer": "Utility-first"
+  },
+  {
+    "question": "Which class is used to apply padding equally to all four sides of an element?",
+    "choices": ["pad-4", "padding-4", "p-all-4", "p-4"],
+    "answer": "p-4"
+  },
+  {
+    "question": "How do you make text bold in Tailwind?",
+    "choices": ["text-bold", "font-bold", "font-weight-bold", "bold"],
+    "answer": "font-bold"
+  },
+  {
+    "question": "Which class enables a flexbox layout on an element?",
+    "choices": ["d-flex", "display-flex", "flex", "flexbox"],
+    "answer": "flex"
+  },
+  {
+    "question": "What is the correct syntax to change the background color of an element when a user hovers over it?",
+    "choices": [
+      ":hover-bg-blue-500",
+      "hover:bg-blue-500",
+      "on-hover:bg-blue-500",
+      "bg-blue-500-hover"
+    ],
+    "answer": "hover:bg-blue-500"
+  },
+  {
+    "question": "How do you set a medium shade of red as the background color?",
+    "choices": ["background-red-500", "bg-red", "color-bg-red", "bg-red-500"],
+    "answer": "bg-red-500"
+  },
+  {
+    "question": "What is the default breakpoint prefix for large screens (1024px and up) in Tailwind?",
+    "choices": ["md:", "l:", "lg:", "xl:"],
+    "answer": "lg:"
+  },
+  {
+    "question": "Which class centers a flex item along the cross-axis (vertically, in a standard row)?",
+    "choices": [
+      "justify-center",
+      "align-center",
+      "content-center",
+      "items-center"
+    ],
+    "answer": "items-center"
+  },
+  {
+    "question": "How do you define a grid container with exactly 3 columns?",
+    "choices": [
+      "grid grid-cols-3",
+      "grid-3",
+      "grid columns-3",
+      "grid-template-3"
+    ],
+    "answer": "grid grid-cols-3"
+  },
+  {
+    "question": "What is the default name of the configuration file where you customize Tailwind themes, colors, and fonts?",
+    "choices": [
+      "tailwind.json",
+      "tailwind.setup.js",
+      "tailwind.config.js",
+      "config.tailwind.js"
+    ],
+    "answer": "tailwind.config.js"
+  }
+]

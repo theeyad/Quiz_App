@@ -1,0 +1,77 @@
+[
+  {
+    "question": "How many columns does the standard Bootstrap grid system have?",
+    "choices": ["10 columns", "12 columns", "16 columns", "8 columns"],
+    "answer": "12 columns"
+  },
+  {
+    "question": "Which Bootstrap class is used to create a responsive, fixed-width container?",
+    "choices": [".container-fluid", ".wrapper", ".content", ".container"],
+    "answer": ".container"
+  },
+  {
+    "question": "What is the correct syntax to create a primary button in Bootstrap?",
+    "choices": [
+      "<button class=\"btn-primary\">",
+      "<button class=\"btn btn-primary\">",
+      "<button class=\"button-primary\">",
+      "<button class=\"btn primary\">"
+    ],
+    "answer": "<button class=\"btn btn-primary\">"
+  },
+  {
+    "question": "Which utility class is used to completely hide an element on all screen sizes?",
+    "choices": [".hidden", ".invisible", ".d-none", ".hide"],
+    "answer": ".d-none"
+  },
+  {
+    "question": "What class is used to make an image responsive so it scales with its parent element?",
+    "choices": [
+      ".img-responsive",
+      ".image-fluid",
+      ".responsive-img",
+      ".img-fluid"
+    ],
+    "answer": ".img-fluid"
+  },
+  {
+    "question": "In Bootstrap's spacing utilities, what does the class 'mt-4' represent?",
+    "choices": [
+      "Margin top size 4",
+      "Margin top 4 pixels",
+      "Padding top size 4",
+      "Margin bottom size 4"
+    ],
+    "answer": "Margin top size 4"
+  },
+  {
+    "question": "Which class is used to center text in Bootstrap?",
+    "choices": [
+      ".text-middle",
+      ".text-center",
+      ".align-center",
+      ".center-text"
+    ],
+    "answer": ".text-center"
+  },
+  {
+    "question": "What is the grid breakpoint prefix for medium screen devices (≥768px) in Bootstrap?",
+    "choices": ["sm", "md", "lg", "xl"],
+    "answer": "md"
+  },
+  {
+    "question": "Which class adds zebra-striping to any table row within a <tbody>?",
+    "choices": [
+      ".table-zebra",
+      ".table-alternating",
+      ".table-striped",
+      ".table-lines"
+    ],
+    "answer": ".table-striped"
+  },
+  {
+    "question": "Which flex utility class changes the flex direction to vertical?",
+    "choices": [".flex-vertical", ".flex-column", ".d-flex-col", ".flex-y"],
+    "answer": ".flex-column"
+  }
+]
