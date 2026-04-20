@@ -1,0 +1,24 @@
+/* css/style.css */
+
+/* When your JS detects a click on an .answer, add this .selected class to it */
+.answer.selected {
+  border-color: #4f46e5 !important; /* Tailwind indigo-600 */
+  background-color: #e0e7ff !important; /* Tailwind indigo-100 */
+  color: #312e81 !important; /* Tailwind indigo-900 */
+}
+
+/* Optional: Add a subtle fade-in animation when your JS removes the 'hidden' class */
+.fade-in {
+  animation: fadeIn 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

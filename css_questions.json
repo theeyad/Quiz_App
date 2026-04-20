@@ -1,0 +1,62 @@
+[
+  {
+    "question": "What does CSS stand for?",
+    "choices": [
+      "Computer Style Sheets",
+      "Cascading Style Sheets",
+      "Creative Style Sheets",
+      "Colorful Style Sheets"
+    ],
+    "answer": "Cascading Style Sheets"
+  },
+  {
+    "question": "Which HTML tag is used to define an internal style sheet?",
+    "choices": ["<script>", "<style>", "<css>", "<html>"],
+    "answer": "<style>"
+  },
+  {
+    "question": "Which CSS property is used to change the text color of an element?",
+    "choices": ["fgcolor", "text-color", "color", "font-color"],
+    "answer": "color"
+  },
+  {
+    "question": "Which property is used to change the background color?",
+    "choices": ["color", "background-color", "bgcolor", "back-color"],
+    "answer": "background-color"
+  },
+  {
+    "question": "How do you select an element with id 'header'?",
+    "choices": [".header", "*header", "header", "#header"],
+    "answer": "#header"
+  },
+  {
+    "question": "How do you select elements with class name 'button'?",
+    "choices": [".button", "button", "#button", "*button"],
+    "answer": ".button"
+  },
+  {
+    "question": "Which property is used to change the font size of an element?",
+    "choices": ["font-style", "text-size", "font-size", "size"],
+    "answer": "font-size"
+  },
+  {
+    "question": "How do you make the text bold in CSS?",
+    "choices": [
+      "font-weight: bold;",
+      "style: bold;",
+      "font: bold;",
+      "text-decoration: bold;"
+    ],
+    "answer": "font-weight: bold;"
+  },
+  {
+    "question": "Which property is used to create space between the element's border and its content?",
+    "choices": ["margin", "spacing", "padding", "border-width"],
+    "answer": "padding"
+  },
+  {
+    "question": "Which CSS property controls the order of overlapping elements?",
+    "choices": ["z-index", "layer-order", "stack", "x-index"],
+    "answer": "z-index"
+  }
+]

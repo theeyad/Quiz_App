@@ -1,0 +1,167 @@
+[
+  {
+    "question": "Which feature allows you to extract properties from an object into distinct variables?",
+    "choices": ["Spread", "Destructuring", "Rest", "Template Literals"],
+    "answer": "Destructuring"
+  },
+  {
+    "question": "In React, you often use this to render content conditionally in one line. What is it?",
+    "choices": [
+      "If/Else statement",
+      "Switch case",
+      "Ternary operator",
+      "While loop"
+    ],
+    "answer": "Ternary operator"
+  },
+  {
+    "question": "Which array method is most commonly used in React to transform a list of data into a list of components?",
+    "choices": ["forEach()", "filter()", "reduce()", "map()"],
+    "answer": "map()"
+  },
+  {
+    "question": "What is the purpose of the 'export' keyword in JavaScript modules?",
+    "choices": [
+      "To save a file to the server",
+      "To make functions or variables available to other files",
+      "To print data to the console",
+      "To delete a variable"
+    ],
+    "answer": "To make functions or variables available to other files"
+  },
+  {
+    "question": "Which of these is a Template Literal?",
+    "choices": [
+      "'Hello World'",
+      "\"Hello World\"",
+      "`Hello ${name}`",
+      "str('Hello')"
+    ],
+    "answer": "`Hello ${name}`"
+  },
+  {
+    "question": "What does the 'import' keyword do?",
+    "choices": [
+      "Installs a library from npm",
+      "Loads functions/variables from another module",
+      "Connects to a database",
+      "Styles an HTML element"
+    ],
+    "answer": "Loads functions/variables from another module"
+  },
+  {
+    "question": "What is the result of using the Spread operator (...) on an object?",
+    "choices": [
+      "It deletes the object",
+      "It creates a shallow copy of the object's properties",
+      "It turns the object into a string",
+      "It freezes the object"
+    ],
+    "answer": "It creates a shallow copy of the object's properties"
+  },
+  {
+    "question": "Which function syntax is preferred in React for writing functional components?",
+    "choices": [
+      "function Component() {}",
+      "Component = function() {}",
+      "const Component = () => {}",
+      "new Component()"
+    ],
+    "answer": "const Component = () => {}"
+  },
+  {
+    "question": "What is the 'Short Circuit' evaluation often used in React JSX for conditional rendering?",
+    "choices": ["&&", "||", "??", "!"],
+    "answer": "&&"
+  },
+  {
+    "question": "What does a Promise represent in JavaScript?",
+    "choices": [
+      "An error in the code",
+      "The eventual completion or failure of an asynchronous operation",
+      "A variable that never changes",
+      "A link between CSS and JS"
+    ],
+    "answer": "The eventual completion or failure of an asynchronous operation"
+  },
+  {
+    "question": "Which method is used to filter out items from an array based on a condition?",
+    "choices": ["slice()", "filter()", "splice()", "find()"],
+    "answer": "filter()"
+  },
+  {
+    "question": "What is the default export syntax?",
+    "choices": [
+      "export { name }",
+      "export default name",
+      "module.exports = name",
+      "export all"
+    ],
+    "answer": "export default name"
+  },
+  {
+    "question": "What is an 'Anonymous Function'?",
+    "choices": [
+      "A function with no name",
+      "A function that is hidden",
+      "A function that cannot be called",
+      "A function inside a CSS file"
+    ],
+    "answer": "A function with no name"
+  },
+  {
+    "question": "Which of the following is used to handle multiple asynchronous operations in parallel?",
+    "choices": [
+      "Promise.all()",
+      "Promise.stop()",
+      "Async.series()",
+      "await.all()"
+    ],
+    "answer": "Promise.all()"
+  },
+  {
+    "question": "What is 'State' conceptually in JavaScript apps?",
+    "choices": [
+      "The physical location of the server",
+      "Data that changes over time and affects the UI",
+      "A permanent database record",
+      "The version of JavaScript being used"
+    ],
+    "answer": "Data that changes over time and affects the UI"
+  },
+  {
+    "question": "How do you define a property in an object shorthand if the key and variable name are the same?",
+    "choices": ["{name: name}", "{name}", "{name = name}", "{'name'}"],
+    "answer": "{name}"
+  },
+  {
+    "question": "What does the 'fetch()' API return?",
+    "choices": ["A String", "A Boolean", "A Promise", "An Array"],
+    "answer": "A Promise"
+  },
+  {
+    "question": "Which keyword is used to pause the execution of an async function until a promise is resolved?",
+    "choices": ["stop", "wait", "await", "hold"],
+    "answer": "await"
+  },
+  {
+    "question": "In an arrow function, if there is only one expression, do you need the 'return' keyword and curly braces?",
+    "choices": [
+      "Yes",
+      "No, they are optional (implicit return)",
+      "Only for strings",
+      "Only for numbers"
+    ],
+    "answer": "No, they are optional (implicit return)"
+  },
+  {
+    "question": "What is 'Immutable' data?",
+    "choices": [
+      "Data that can be changed easily",
+      "Data that cannot be changed after it is created",
+      "Data that is stored in the browser cache",
+      "Data that only contains numbers"
+    ],
+    "answer": "Data that cannot be changed after it is created"
+  }
+]
