@@ -1,5 +1,6 @@
 // Global Vars
 let jsonData = [];
+let currentTopic;
 let quizTimer;
 let currentQuestion = 0;
 let correctAnswers = 0;
@@ -15,13 +16,18 @@ const testNumSpans = document.querySelectorAll(".num-of-questions");
 async function questionsNum() {
   for (let i = 0; i < testCards.length; i++) {
     // testCards[0].classList[1] = html (the second class name in the card element)
-    let result = await fetch(
-      `questions/${testCards[i].classList[1]}_questions.json`,
-    );
-    let data = await result.json();
+    try {
+      let result = await fetch(
+        `questions/${testCards[i].classList[1]}_questions.json`,
+      );
+      if (!result.ok) throw new Error("Failed to load");
+      let data = await result.json();
+    } catch (err) {
+      console.log(`Failed To Fetch ${err}`);
+    }
 
     // assign number of questions in the json file to the span
-    testNumSpans[i].innerHTML = data.length;
+    testNumSpans[i].textContent = data.length;
   }
 }
 
@@ -37,7 +43,8 @@ testCards.forEach((card) =>
     quizBox.classList.remove("hidden");
 
     // Name of the Topic
-    startQuiz(card.classList[1]);
+    currentTopic = card.classList[1];
+    startQuiz(currentTopic);
   }),
 );
 
@@ -49,11 +56,16 @@ async function startQuiz(topic) {
   currentQuestion = 0;
 
   let topicName = document.querySelector(".topic-name");
-  topicName.innerHTML = topic;
+  topicName.textContent = topic;
 
-  let result = await fetch(`questions/${topic}_questions.json`);
-  let data = await result.json();
-  jsonData = data;
+  try {
+    let result = await fetch(`questions/${topic}_questions.json`);
+    if (!result.ok) throw new Error("Failed to load");
+    let data = await result.json();
+    jsonData = data;
+  } catch (err) {
+    console.log(`Failed To Fetch ${err}`);
+  }
 
   createTimer();
 }
@@ -63,7 +75,7 @@ function createTimer() {
   const quizStarted = Date.now();
   const testTime = document.querySelector(".test-time");
 
-  const numOfMinutes = 0.5;
+  const numOfMinutes = jsonData.length / 2;
   const minuteInMs = numOfMinutes * 60 * 1000;
 
   testTime.textContent = `${String(numOfMinutes).padStart(2, "0")}:00`;
@@ -119,11 +131,11 @@ function showResult(correctAnswers, wrongAnswers, numOfQuestions) {
   const trueAnswers = document.querySelector(".right-answers");
   const falseAnswers = document.querySelector(".wrong-answers");
 
-  score.innerHTML = correctAnswers;
-  numberOfQuestions.innerHTML = numOfQuestions;
+  score.textContent = correctAnswers;
+  numberOfQuestions.textContent = numOfQuestions;
 
-  trueAnswers.innerHTML = correctAnswers;
-  falseAnswers.innerHTML = wrongAnswers;
+  trueAnswers.textContent = correctAnswers;
+  falseAnswers.textContent = wrongAnswers;
 }
 
 // Event Listeners
@@ -180,8 +192,13 @@ document.querySelector(".submit").addEventListener("click", () => {
   });
 });
 
-const back = document.querySelector(".back");
-back.addEventListener("click", () => {
+document.querySelector(".restart").addEventListener("click", () => {
+  resultBox.classList.add("hidden");
+  quizBox.classList.remove("hidden");
+  startQuiz(currentTopic);
+});
+
+document.querySelector(".back").addEventListener("click", () => {
   resultBox.classList.add("hidden");
   cardsGrid.classList.remove("hidden");
 });
