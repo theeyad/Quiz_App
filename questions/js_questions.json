@@ -5,7 +5,7 @@
     "answer": "Destructuring"
   },
   {
-    "question": "In React, you often use this to render content conditionally in one line. What is it?",
+    "question": "In JS, you often use this to render content conditionally in one line. What is it?",
     "choices": [
       "If/Else statement",
       "Switch case",
