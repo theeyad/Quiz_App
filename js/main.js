@@ -22,12 +22,12 @@ async function questionsNum() {
       );
       if (!result.ok) throw new Error("Failed to load");
       let data = await result.json();
+
+      // assign number of questions in the json file to the span
+      testNumSpans[i].textContent = data.length;
     } catch (err) {
       console.log(`Failed To Fetch ${err}`);
     }
-
-    // assign number of questions in the json file to the span
-    testNumSpans[i].textContent = data.length;
   }
 }
 
